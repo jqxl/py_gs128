@@ -5,7 +5,7 @@
 
 ## Installation
 
-To install `py_gs128`, use pip:
+To install `py_gs128` via pip:
 
 ```bash
 pip install git+https://github.com/jqxl/py_gs128.git
