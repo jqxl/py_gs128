@@ -33,6 +33,13 @@ print(code_value)  # -> 01046456438549341124072221AAAAAA
 print(my_code.get_text())   # -> (01)04645643854934(11)240722(21)AAAAAA
 ```
 
+### Output
+
+```plaintext
+01046456438549341124072221AAAAAA
+(01)04645643854934(11)240722(21)AAAAAA
+```
+
 ### Decode Barcode
 
 You can decode a GS1-128 barcode using the `decode_gs128` function. Here’s an example of how to decode a barcode:
@@ -50,35 +57,9 @@ for ai, description, data in decoded_barcode:
     print(f"AI: {ai}, Description: {description}, Data: {data}")
 ```
 
-## Example
-
-```python
-import py_gs128
-from datetime import datetime
-
-# Create Barcode
-my_code = py_gs128.Creater()
-my_code.code_01('04645643854934')
-my_code.code_11(datetime.now())
-my_code.code_21(digs=6)
-
-code_value = my_code.get_value()
-
-print(code_value)  # -> 01046456438549341124072221AAAAAA
-print(my_code.get_text())   # -> (01)04645643854934(11)240722(21)AAAAAA
-
-# Decode barcode
-decoded_barcode = py_gs128.decode_gs128(code_value)
-
-for ai, description, data in decoded_barcode:
-    print(f"AI: {ai}, Description: {description}, Data: {data}")
-```
-
 ### Output
 
 ```plaintext
-01046456438549341124072221AAAAAA
-(01)04645643854934(11)240722(21)AAAAAA
 AI: 01, Description: GTIN, Data: 04645643854934
 AI: 11, Description: PROD DATE, Data: 240722
 AI: 21, Description: SERIAL, Data: AAAAAA
