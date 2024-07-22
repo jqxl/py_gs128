@@ -155,11 +155,3 @@ Here are some of the AIs used in the examples:
 - `91`: INTERNAL (Internal company information)
 
 </details>
-
-
-## License
-
-This project is licensed under the MIT License.
-```
-
-This `README.md` file provides installation instructions, usage examples for creating and decoding GS1-128 barcodes, and details about some common Application Identifiers (AIs). Adjust the details as needed to fit your specific library's functionality and additional features.
