@@ -12,6 +12,12 @@ class Creater:
     def __init__(self):
         self.codes = []
 
+    def __repr__(self):
+        return self.get_value()
+
+    def __str__(self) -> str:
+        return self.get_value()
+
 
     def get_value(self):
         return ''.join([f'{prefix}{value}' for prefix, value in self.codes])
