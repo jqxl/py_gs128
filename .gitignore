@@ -1,5 +1,5 @@
 # Byte-compiled / optimized / DLL files
-__pycache__/
+**/__pycache__/
 
 # Jupyter Notebook
 .ipynb_checkpoints
@@ -7,3 +7,13 @@ __pycache__/
 # Environments
 .env
 .venv
+
+# Local test files
+_*.ipynb
+
+# PyPi publist files
+dist
+py_cz_api.egg-info
+_dist.cmd
+_twine.cmd
+pypi.token
